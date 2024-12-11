@@ -14,11 +14,19 @@ function App() {
     <h1>Task Manager</h1>
     <h2>Current task {inProgress.length}</h2>
     <ul>
-      {inProgress.map((currItem) => (<li key={currItem.id}>{currItem.title}</li>))}
+      {inProgress.map((currItem) => (<li key={currItem.id} className="style-none">
+        <div><strong>{currItem.title}</strong></div>
+        <div>Priorità: {currItem.priority}</div>
+        <div>Tempo stimato: {currItem.estimatedTime}</div>
+      </li>))}
     </ul>
     <h2>Completed task {completed.length}</h2>
     <ul>
-      {completed.map(currItem => <li key={currItem.id}>{currItem.title}</li>)}
+      {completed.map(currItem => <li key={currItem.id} className="style-none">
+        <div><strong>{currItem.title}</strong></div>
+        <div>Priorità: {currItem.priority}</div>
+        <div>Tempo stimato: {currItem.estimatedTime}</div>
+        </li>)}
     </ul>
     </>
   )
