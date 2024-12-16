@@ -1,3 +1,63 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.container {
+    width: 90%;
+    /* max-width: 1100px; */
+    margin: 0 auto;
+}
+
 .style-none {
     list-style: none;
+}
+
+/* LAYOUT */
+.header {
+    background-color: #80ffd2;
+    padding: 15px 0;
+ }
+
+.curr-task {
+    padding: 15px 0;
+}
+
+.completed-task {
+    padding-bottom: 15px;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+.title-elem{
+    padding-top: 5px;
+    display: inline-block;
+}
+
+.state {
+    margin: 0 10px;
+    padding: 3px 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.elem {
+    padding: 2px;
+}
+
+.completed {
+    background-color: yellow;
+}
+
+.backlog {
+    background-color: blue;
+}
+
+.in_progress {
+    background-color: violet;
 }
